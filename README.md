@@ -46,3 +46,9 @@ There are two different concepts at play in this project:
 
 By using both methods, you ensure that sensitive data is encrypted on the server, while the client-side code logic is obfuscated to impede reverse engineering.
 
+## Contributors
+
+<!-- Contributors list -->
+[![Contributor Name](https://github.com/sedavid1.png?size=40)](https://github.com/sedavid1)
+
+
