@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Manager</title>
+  <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+  <link rel="stylesheet" href="static/styles.css">
+  <!-- Link external JavaScript file from static folder -->
+</head>
+<body>
+  <!-- Theme toggle button -->
+  <button class="theme-toggle" id="themeToggle">🌙</button>
+
+  <h2>Welcome to Password Manager</h2>
+
+  <form id="registerForm" action="/register" method="post">
+    <h3>Register</h3>
+    <input type="text" name="username" placeholder="Username" required autocomplete="username">
+    <input type="password" name="password" placeholder="Password" required autocomplete="new-password">
+    <button type="submit">Register</button>
+  </form>
+
+  <form id="loginForm" action="/login" method="post">
+    <h3>Login</h3>
+    <input type="text" name="username" placeholder="Username" required autocomplete="username">
+    <input type="password" name="password" placeholder="Password" required autocomplete="current-password">
+    <button type="submit">Login</button>
+  </form>
+
+  <div class="help-section">
+    <h3>Help Section</h3>
+    <p><strong>Register:</strong> Create a new user account.</p>
+    <p><strong>Login:</strong> Access your stored passwords.</p>
+    <p><strong>Store a Password:</strong> Save credentials for different services.</p>
+    <p><strong>Retrieve Passwords:</strong> View stored passwords.</p>
+    <p><strong>Logout:</strong> Exit your session.</p>
+  </div>
+</body>
+</html>
+

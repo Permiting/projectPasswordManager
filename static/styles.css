@@ -1,0 +1,168 @@
+/*------------------------------------------------------------------
+  Universal Reset & Box-Sizing
+------------------------------------------------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------------------------------------------------
+  Base Styles (Light Mode)
+------------------------------------------------------------------*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f9;    /* Light background */
+  color: #333;           /* Dark text for readability */
+  margin: 0;
+  padding: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/*------------------------------------------------------------------
+  Container Styles for Index Page
+------------------------------------------------------------------*/
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;         /* White background */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/*------------------------------------------------------------------
+  Container Styles for Dashboard Page
+------------------------------------------------------------------*/
+.dashboard-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/*------------------------------------------------------------------
+  Section Box Styles (Used Across Pages)
+------------------------------------------------------------------*/
+.section-box {
+  background: #fff;         /* Card background for light mode */
+  color: #333;              /* Text for light mode */
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.section-box h3 {
+  margin-top: 0;
+}
+
+/*------------------------------------------------------------------
+  Form Elements (Inputs & Buttons)
+------------------------------------------------------------------*/
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+  transition: border 0.3s ease;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #005bb5;
+}
+
+/*------------------------------------------------------------------
+  Theme Toggle Button
+------------------------------------------------------------------*/
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: #005bb5;
+}
+
+/*------------------------------------------------------------------
+  Dark Mode Overrides
+------------------------------------------------------------------*/
+/* Change overall background and text colors in dark mode */
+body.dark-theme {
+  background: #1f1f1f;
+  color: #f4f4f9;
+}
+
+/* Dark mode for section/card boxes */
+body.dark-theme .section-box {
+  background: #333;
+  color: #f4f4f9;
+  box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+/* Dark mode for input fields */
+body.dark-theme input {
+  background: #555;
+  color: #fff;
+  border: 1px solid #777;
+}
+
+/* Dark mode for buttons */
+body.dark-theme button {
+  background: #004a99;
+}
+body.dark-theme button:hover {
+  background: #003d80;
+}
+
+/* Dark mode for containers (index page) */
+body.dark-theme .container {
+  background: #333;
+  color: #f4f4f9;
+  box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+/*------------------------------------------------------------------
+  Fade-in Animation Setup
+------------------------------------------------------------------*/
+/* Only apply fade-in if the body has the class "fade-enabled" */
+body.fade-enabled form,
+body.fade-enabled .help-section,
+body.fade-enabled .section-box {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+

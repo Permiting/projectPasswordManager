@@ -1,0 +1,74 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- Link to your current CSS file including theme styles -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional styling for centering dashboard content */
+    .dashboard-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .section-box {
+      background: #fff;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .section-box h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Theme toggle button -->
+  <button class="theme-toggle" id="themeToggle">🌙</button>
+
+  <div class="dashboard-container">
+    <h2>Dashboard</h2>
+    <a href="/logout">Logout</a>
+
+    <div class="section-box">
+      <h3>Store a Password</h3>
+      <form action="/store" method="post">
+        <input type="text" name="service" placeholder="Service Name" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Store</button>
+      </form>
+    </div>
+
+    <div class="section-box">
+      <h3>Stored Passwords</h3>
+      <ul>
+        {% for service, password in passwords %}
+          <li>
+            <strong>{{ service }}</strong>: 
+            <span class="password">{{ password }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+      {% if not passwords %}
+        <p>No passwords stored.</p>
+      {% endif %}
+    </div>
+
+    <div class="section-box">
+      <h3>Help Section</h3>
+      <p><strong>Register:</strong> Create a new user account.</p>
+      <p><strong>Login:</strong> Access your stored passwords.</p>
+      <p><strong>Store a Password:</strong> Save credentials for different services.</p>
+      <p><strong>Retrieve Passwords:</strong> View stored passwords.</p>
+      <p><strong>Logout:</strong> Exit your session.</p>
+    </div>
+  </div>
+
+  <!-- Link to your external JavaScript file which includes the theme toggle logic -->
+  <script src="scripts.js"></script>
+</body>
+</html>
