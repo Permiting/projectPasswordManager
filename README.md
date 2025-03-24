@@ -49,6 +49,6 @@ By using both methods, you ensure that sensitive data is encrypted on the server
 ## Contributors
 
 <!-- Contributors list -->
-[![Contributor Name](https://github.com/sedavid1.png?size=40)](https://github.com/sedavid1)
+[![Contributor Name](https://github.com/sedavid1.png?size=80)](https://github.com/sedavid1)
 
 
