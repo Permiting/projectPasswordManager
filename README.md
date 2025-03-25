@@ -55,5 +55,5 @@ By using both methods, you ensure that sensitive data is encrypted on the server
 
 
 <a href="https://github.com/mannydelara1">
-  <img src="https://github.com/mannydelara1.png" alt="Manny" width="40" height="40">
+  <img src="https://github.com/mannydelara1.png" alt="Manny" width="140" height="140">
 </a>
