@@ -51,4 +51,5 @@ By using both methods, you ensure that sensitive data is encrypted on the server
 <!-- Contributors list -->
 [![Sergio](https://github.com/sedavid1.png?size=140)](https://github.com/sedavid1)
 [![Permit](https://github.com/Permiting.png?size=140)](https://github.com/Permiting)
+[![Manny](https://github.com/mannydelara1.png?size=140)](https://github.com/mannydelara1)
 
