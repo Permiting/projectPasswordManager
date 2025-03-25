@@ -53,5 +53,7 @@ By using both methods, you ensure that sensitive data is encrypted on the server
 
 [![Permit](https://github.com/Permiting.png?size=140)](https://github.com/Permiting)
 
-[![Manny](https://github.com/mannydelara1.png?size=10)](https://github.com/mannydelara1)
 
+<a href="https://github.com/mannydelara1">
+  <img src="https://github.com/mannydelara1.png" alt="Manny" width="40" height="40">
+</a>
